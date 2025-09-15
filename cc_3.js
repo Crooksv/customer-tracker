@@ -11,3 +11,6 @@ customers.push({name:"Anthony Locke", email: "antlocke@usf.edu", purchases: ["Co
 customers.shift();
 customers[0].email = "vinnyc@gmail.com";
 customers[1].purchases.push("Oil");
+
+customers.forEach(customer => {console.log( `Name: ${customer.name}, Email: ${customer.email}, Total Purchases: ${customer.purchases.length}`); } );
+
